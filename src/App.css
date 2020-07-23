@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+body {
+  font-family: Montserrat,sans-serif;
+}
+.crop {
+  max-height: 720px;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width:94px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 991px) {
+  .logo {
+    margin-right: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.clean-navbar {
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+  z-index: 99;
+  background-color: white;
+}
+
+.my-container img {
+  width: 100%;
+}
+.my-container {
+  position: relative;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bottom-left {
+  width: 100%;
+  font-size: 30px;
+  padding: 1rem;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(52, 58, 64, 0.7);
 }
 
-@keyframes App-logo-spin {
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-top {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 500ms ease-out 0s 1 slideInFromLeft;
+  background: #343a40!important;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.navbar-collapse, .nav-item a {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+
+.top-left {
+  padding: 1rem;
+  color:black;
+  background-color: white;
+  position: absolute;
+  top: 72px;
+  left: 16px;
+}
+
+.holds-the-iframe {
+  background:url("/images/logo.png") center center no-repeat;
+}
+
+.spinner {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin-left:50%;
+  margin-top:5rem;
+}
+
+.my-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+}
+
+
+.home {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+@keyframes fadein {
   from {
-    transform: rotate(0deg);
+    opacity:0;
   }
   to {
-    transform: rotate(360deg);
+    opacity:1;
   }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hotline-heading {
+  background-color: #17a2b8;
+  color:white;
+  position: absolute;
+  left: 0px;
+  top: 0rem;
+  padding: 0.9rem 3rem 1rem 2.1rem;
 }
