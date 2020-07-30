@@ -8,7 +8,7 @@ class TotalPopulation extends Component {
 
   render() {
     return (
-      <Container className="pb-5 pt-4">
+      <Container fluid className="pb-5 pt-4">
         <Row>
           <Col>
             <h3 className="bg-secondary text-white mb-4 p-3 pr-4 pl-4">

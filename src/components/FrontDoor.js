@@ -8,7 +8,7 @@ class FrontDoor extends Component {
 
   render() {
     return (
-      <Container className="pb-5 pt-5">
+      <Container fluid className="pb-5 pt-5">
         <Row>
           <Col>
             <h3 className="bg-info text-white mb-4 p-3 pr-4 pl-4">

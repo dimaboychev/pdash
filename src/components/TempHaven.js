@@ -8,7 +8,7 @@ class TempHaven extends Component {
 
   render() {
     return (
-      <Container className="pt-5 pb-5">
+      <Container fluid className="pt-5 pb-5">
         <Row>
           <Col>
             <h3 className="bg-pink text-white mb-4 p-3 pr-4 pl-4">
