@@ -59,10 +59,10 @@ function Home() {
           CFSA’s Public Dashboard shows our commitment to performance, transparency and public reporting.
         </div>
       </div>
-      <div className="bg-light">
+      <div className="bg-light" >
         <TotalPopulation/>
       </div>
-      <div className="bg-alert-dark">
+      <div style={{background:"#E8E8E8"}}>
         <FrontDoor />
       </div>
       <div className="bg-light">
