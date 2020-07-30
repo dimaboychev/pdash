@@ -1,13 +1,15 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {LinkContainer} from 'react-router-bootstrap'
+import TotalPopulation from "../components/TotalPopulation";
+import FrontDoor from "../components/FrontDoor";
+import TempHaven from "../components/TempHaven";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home mb-5">
       <Navbar fixed="top" collapseOnSelect expand="lg" className="clean-navbar">
         <LinkContainer to="/">
           <a href="/">
@@ -57,9 +59,15 @@ function Home() {
           CFSA’s Public Dashboard shows our commitment to performance, transparency and public reporting.
         </div>
       </div>
-
-      <Container>
-      </Container>
+      <div className="bg-light">
+        <TotalPopulation/>
+      </div>
+      <div className="bg-alert-dark">
+        <FrontDoor />
+      </div>
+      <div className="bg-light">
+        <TempHaven />
+      </div>
     </div>
   );
 }

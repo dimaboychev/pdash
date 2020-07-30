@@ -24,7 +24,7 @@ class HotlineCalls extends Component {
         <LinkContainer to="/">
           <div className="my-close">CLOSE X</div>
         </LinkContainer>
-        <h2 className="hotline-heading">Hotline Calls</h2>
+        <h2 className="heading bg-info text-white left-0 top-0">Hotline Calls</h2>
         <Row style={{paddingTop: "4.5rem"}}>
           <Col md={4}>
             <Card className="mb-4 pb-3">
