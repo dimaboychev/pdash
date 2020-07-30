@@ -23,21 +23,21 @@ class FrontDoor extends Component {
         </Row>
         <Row>
           <Col>
-            <HorImgCard text="Hotline calls" />
+            <HorImgCard text="Hotline calls" url="/reports/hotline-calls"/>
           </Col>
           <Col>
-            <HorImgCard text="Investigations" />
+            <HorImgCard text="Investigations"/>
           </Col>
           <Col>
-            <HorImgCard text="Special Investigation Types" />
+            <HorImgCard text="Special Investigation Types"/>
           </Col>
         </Row>
         <Row className="mt-4">
           <Col>
-            <HorImgCard text="Demographics of Children Served in Their Home" />
+            <HorImgCard text="Demographics of Children Served in Their Home"/>
           </Col>
           <Col>
-            <HorImgCard text="Open and Closed In-Home Cases" />
+            <HorImgCard text="Open and Closed In-Home Cases"/>
           </Col>
           <Col></Col>
         </Row>

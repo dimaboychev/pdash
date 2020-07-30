@@ -1,17 +1,24 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { useHistory } from "react-router-dom";
 
-class HorImgCard extends Component {
+function HorImgCard(props) {
+  const history = useHistory();
 
-  render() {
-    return (
-      <div className="align-items-center d-flex bg-white hor-img-card">
-        <img alt={this.props.alt ?? "chart"} className="mr-3" src={this.props.img ?? '/images/chart.png'}/>
-        <div>
-          {this.props.text}
-        </div>
-      </div>
-    );
+  function handleClick() {
+    if (props.url) {
+      history.push(props.url);
+    }
   }
+
+  return (
+    <div className="align-items-center d-flex bg-white hor-img-card"
+         onClick={handleClick}>
+      <img alt={props.alt ?? "chart"} className="mr-3" src={props.img ?? '/images/chart.png'}/>
+      <div>
+        {props.text}
+      </div>
+    </div>
+  );
 }
 
 export default HorImgCard;

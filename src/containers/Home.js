@@ -22,10 +22,9 @@ function Home() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <LinkContainer to="/accessibility">
-              <Nav.Link>Accessibility</Nav.Link>
-            </LinkContainer>
-            <Nav.Link>Reports</Nav.Link>
+            {/*<LinkContainer to="/accessibility">*/}
+            {/*  <Nav.Link>Accessibility</Nav.Link>*/}
+            {/*</LinkContainer>*/}
             <NavDropdown title="Dashboards" id="collasible-nav-dropdown">
               <LinkContainer to="/reports/hotline-calls">
                 <NavDropdown.Item href="#action/3.1">Hotline Calls</NavDropdown.Item>
@@ -35,6 +34,7 @@ function Home() {
               <NavDropdown.Divider/>
               <NavDropdown.Item href="#action/3.4">All dashboards</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link>Reports</Nav.Link>
           </Nav>
           <Nav>
             <LinkContainer to="/feedback">
@@ -50,11 +50,11 @@ function Home() {
         <div className="crop">
           <img src="/images/children.jpg" alt="children"/>
         </div>
-        <div className="top-left navbar-brand active">
-          Child & Family Services Agency
-          <br/>
-          District of Columbia
-        </div>
+        {/*<div className="top-left navbar-brand active">*/}
+        {/*  Child & Family Services Agency*/}
+        {/*  <br/>*/}
+        {/*  District of Columbia*/}
+        {/*</div>*/}
         <div className="bottom-left">
           CFSA’s Public Dashboard shows our commitment to performance, transparency and public reporting.
         </div>
